@@ -1,0 +1,42 @@
+{
+    "name": "squid3_sentry",
+    "version": "1.2.0",
+    "description": "squid3 redirect_program",
+    "url": "http://s-team.at",
+    "keywords": ["squid", "proxy", "filter", "url", "redirect_programm"],
+    "author": "Philipp Waldmann <philipp.waldmann@s-team.at>",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/s-team/squid3_sentry.git"
+    },
+    "dependencies": {
+        "redis": "=0.7.2",
+        "glob": "=3.1.9",
+        "buffered-reader": ">=0.2.3",
+        "async": "=0.1.22",
+        "progress-bar": "=0.1.1",
+        "commander": "=0.6.0",
+        "netmask": "=0.0.2",
+        "ldapjs": ">=0.5.0",
+        "bunyan": ">=0.10.0",
+        "flow": ">=0.2.2"
+    },
+    "devDependencies": {
+        "vows": ">= 0.6.x"
+    },
+    "main": "./core",
+    "bin": {
+        "import": "./bin/import",
+        "sentry": "./bin/sentry"
+    },
+    "directories": {
+        "test": "./test",
+        "bin": "./bin"
+    },
+    "scripts": {
+        "test": "vows test/*-test.js --spec"
+    },
+    "engines": {
+        "node": ">=0.6.7"
+    }
+}

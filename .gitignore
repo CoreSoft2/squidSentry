@@ -1,0 +1,8 @@
+.svn
+node_modules
+*.log
+.gitignore
+.*
+~*
+config/*.yml
+!.gitignore
