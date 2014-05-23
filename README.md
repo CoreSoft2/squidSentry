@@ -1,5 +1,5 @@
-# squid3_sentry
-
+# squidSentry
+squidSentry - it is a fork of the project [squi3_sentry](https://github.com/s-team/squid3_sentry)
 a redirect_program for squid3 (like squidGuard, but more flexible)
 
 ## Highlights
